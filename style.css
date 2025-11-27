@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'omoriNormal';
+    src: url('Fonts/omoriFont.ttf') format('truetype');
+}
+
 /* ====== Global Reset ====== */
 * {
     margin: 0;
@@ -71,6 +76,7 @@ header h1 {
 .article p {
     line-height: 1.5;
     font-size: 1rem;
+    font: 'omoriNormal', sans-serif;
 }
 /* ===== Floating Top Navigation Bar ===== */
 #topbar {

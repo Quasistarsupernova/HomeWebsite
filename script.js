@@ -1,5 +1,15 @@
 let article = [
     [
+        "Hello world!",
+        `Welcome to my website!
+        I built this from scratch and most definitely did not use AI for the majority of this project, what do you mean.
+        Anways, I hope you like it and enjoy the definitely human created project that is here.
+        Right now I am yapping a lot because I want to fill in space, so uhh so be it!
+        Alright I think that's enough space wasted, I'm going to continue coding the actually important things now (no offense).`,
+        ["https://i.redd.it/3e5zjadn7qra1.png"],
+        "EN",
+    ],
+    [
         "你好世界！",
         `
             你好，欢迎来到我的网站！在这边我会写一下我的日记，分享一些有趣的事情。
@@ -8,36 +18,7 @@ let article = [
         总的来说，这是一个美好的一天，我很享受在公园的时光。希望以后还能有更多这样的日子！
         `,
         ["https://s3-us-west-1.amazonaws.com/ehq-production-us-california/f40c5f18b3a36e49a6f5d3dd1d9526ce36e91002/original/1690314651/a70e88521a19164d83f4e559b6474274_thumbnail_image1.jpg?1690314651"],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
-    ],
-    [
-        "Example",
-        "Welcome to my website, ermmm idk what to put here lmao!",
-        [],
+        "中",
     ],
 ];
 
@@ -60,7 +41,7 @@ function load_(i){
     `;
 
     for(let j = 0; j < article[i][2].length; j++) {
-        document.getElementById("article"+j+"_").innerHTML += `<img src="`+article[i][2][j]+`" alt="Article Image `+j+`" class="article-image" height ="300px">`;
+        document.getElementById("article"+i+"_").innerHTML += `<img src="`+article[i][2][j]+`" alt="Article Image `+j+`" class="article-image" height ="300px">`;
     }
 }
 
