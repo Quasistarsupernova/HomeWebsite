@@ -31,12 +31,16 @@ restart_.addEventListener('click', function(){
 });
 
 function load_(i){
+    let extra = style="font-family: omoriNormal; Font-size: 25px; line-height: 25px;";
+    if(article[i].length > 2 && article[i][3] == "中"){
+        extra = style="font-family: chineseNormal; Font-size: 25px; line-height: 25px;";
+    }
     articles_.innerHTML += `
         <div `+`id="article`+i+`_" class="article">`+`
             <div id="article_header">
                 <h2>`+article[i][0]+`</h2>
             </div>
-            <p style="font-family: omoriNormal; Font-size: 25px; line-height: 25px;">`+article[i][1]+`</p>
+            <p`+extra+`>`+article[i][1]+`</p>
         </div>
     `;
 
