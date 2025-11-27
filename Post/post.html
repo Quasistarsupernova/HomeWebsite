@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="posLook.css">
+    <title>Post</title>
+</head>
+<body>
+    <nav id="topbar">
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Logo" width="50px" height="50px"/>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="Post/post.html">Post</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <header>
+            <h1 id="titleH">
+                Write something & post.
+            </h1>
+        </header>
+        <br>
+        <br>
+        <div id="input_">
+            <div id="editor-container">
+                <div id="toolbar">
+                    <select id="fontSelect">
+                        <option value="omoriNormal">Normal</option>
+                        <option value="omoriScared">Scary</option>
+                    </select>
+
+                    <select id="fontSizeSelect">
+                        <option value="12px">12</option>
+                        <option value="14px">14</option>
+                        <option value="18px">18</option>
+                        <option value="25px">25</option>
+                        <option value="32px">32</option>
+                    </select>
+
+                    <button onclick="document.execCommand('bold')"><b>B</b></button>
+                    <button onclick="document.execCommand('italic')"><i>I</i></button>
+                    <button onclick="document.execCommand('underline')"><u>U</u></button>
+                </div>
+
+                <div id="editor" contenteditable="true">
+                    Type your message here...
+                </div>
+            </div>
+        </div>
+
+        <button id="post_">Post</button>
+    </div>
+
+    <script src="poScript.js"></script>
+</body>
+</html>
