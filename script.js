@@ -36,7 +36,7 @@ function load_(i){
             <div id="article_header">
                 <h2>`+article[i][0]+`</h2>
             </div>
-            <p>`+article[i][1]+`</p>
+            <p style="font-family: omoriNormal; Font-size: 25px; line-height: 25px;">`+article[i][1]+`</p>
         </div>
     `;
 
