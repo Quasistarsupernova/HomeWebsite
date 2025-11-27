@@ -41,7 +41,7 @@ function load_(i){
     `;
 
     for(let j = 0; j < article[i][2].length; j++) {
-        document.getElementById("article"+i+"_").innerHTML += `<img src="`+article[i][2][j]+`" alt="Article Image `+j+`" class="article-image" height ="300px">`;
+        document.getElementById("article"+i+"_").innerHTML += `<img src="`+article[i][2][j]+`" alt="Article Image `+j+`" class="article-image">`;
     }
 }
 

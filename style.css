@@ -3,12 +3,15 @@
     src: url('Fonts/omoriFont.ttf') format('truetype');
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ====== Global Reset ====== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ====== Body & Layout ====== */
@@ -76,8 +79,9 @@ header h1 {
 .article p {
     line-height: 1.5;
     font-size: 1rem;
-    font: 'omoriNormal', sans-serif;
+    font-family: 'omoriNormal', Arial, sans-serif;
 }
+
 /* ===== Floating Top Navigation Bar ===== */
 #topbar {
     position: fixed;       /* makes it float */
