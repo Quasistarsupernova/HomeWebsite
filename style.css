@@ -72,3 +72,68 @@ header h1 {
     line-height: 1.5;
     font-size: 1rem;
 }
+/* ===== Floating Top Navigation Bar ===== */
+#topbar {
+    position: fixed;       /* makes it float */
+    top: 20px;             /* distance from top of page */
+    left: 50%;
+    transform: translateX(-50%); /* center it */
+    
+    width: 90%;
+    max-width: 950px;
+
+    background: rgba(75, 141, 248, 0.85); /* semi-transparent blue */
+    backdrop-filter: blur(10px);          /* glassy blur */
+    color: white;
+
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2000;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Navbar content */
+#topbar .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#topbar .nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+#topbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+#topbar .nav-links a:hover {
+    opacity: 0.65;
+}
+
+/* Prevent content from sliding under the bar */
+body {
+    padding-top: 100px;
+}
+
+.article-image {
+    margin-top: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%; 
+    float: center;
+}
+
+#article_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
