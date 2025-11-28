@@ -193,18 +193,10 @@ function sleep(ms) {
 
 let diffT = [
     "Website",
-    "Website, by quasi",
-    "Website, by quasi.",
-    "Website, by Quasistarsupernova.",
+    "Website, by [redacted]",
+    "Website, by [redacted].",
+    "Website, by [redacted][redacted].",
     "Welcome to my website!",
-    "Website",
-    "Website.",
-    "Website...",
-    "Website.....",
-    "Welp...",
-    "I feel like Toby Fox",
-    "Writing this flavour text.",
-    "Writing this flavour text...",
     "Website",
 ];
 let inProgress = false;
